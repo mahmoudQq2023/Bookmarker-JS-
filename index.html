@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker JS</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container title text-center py-5">
+      <h1>Bookmarker</h1>
+    </div>
+
+    <div
+      class="container text-center d-flex justify-content-center align-items-center content-all"
+    >
+      <div class="card w-100 mb-3 content">
+        <div class="card-body">
+          <div class="title2">
+            <h2>
+              <i class="fa-solid fa-bookmark"></i> your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+          </div>
+          <div class="mb-3">
+            <label
+              for="bookmarkName"
+              class="form-label d-flex justify-content-start gap-1"
+            >
+              <div class="icone">
+                <i class="fa-solid fa-file-signature"></i>
+              </div>
+              Site Name</label
+            >
+            <input
+            oninput="validateInputes(this)"
+              type="text"
+              class="form-control"
+              id="bookmarkName"
+              aria-describedby="emailHelp"
+            />
+
+            <div class="alert alert-danger d-none ">
+            faild 
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="bookmarkURL"
+              class="form-label d-flex justify-content-start gap-1"
+            >
+              <div class="icone"><i class="fa-solid fa-link"></i></div>
+              Site URL</label
+            >
+            <input type="url" class="form-control" id="bookmarkURL"  oninput="validateInputes(this)" />
+
+
+            <div class="alert alert-danger d-none ">
+              It must contain a valid email
+              </div>
+          </div>
+
+          <button onclick="addBookMark() " type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+<div class="container w-75">
+  <div class="search">
+    <input   oninput="search()" id="search" type="search" class="form-control" placeholder="Search By Site Name ">
+  </div>
+</div>
+    
+    <div class="container content w-75">
+      <table class="table text-center mt-4 ">
+        <thedad>
+          <th>index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thedad>
+        <tbody id="tBody">
+          <!-- <tr>
+          <td>1</td>
+          <td>Hello</td>
+          <td><button class="btn btn-primary">Visit</button></td>
+          <td><button class="btn btn-danger">Delete</button></td>
+        </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

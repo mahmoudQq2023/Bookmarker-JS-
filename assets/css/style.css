@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../image/puffin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title h1 {
+  color: rgb(5, 5, 5);
+  font-family: Pacifico;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+.content-all {
+  margin-top: 90px;
+}
+.content {
+  padding: 50px;
+  border-radius: 80px;
+}
+
+.title2 h2 {
+  font-family: "Righteous", cursive;
+  font-size: 2rem;
+  background-image: linear-gradient(to right, #2c15c1, #763842);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
